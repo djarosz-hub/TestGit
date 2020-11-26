@@ -1,4 +1,4 @@
-const imgNames = [
+const imgNames1 = [
     'https://picsum.photos/id/1025/367/267',
     'https://picsum.photos/id/1062/367/267',
     'https://picsum.photos/id/237/367/267',
@@ -6,43 +6,27 @@ const imgNames = [
     'https://picsum.photos/id/659/367/267'
 ];
 
-const images = [];
+const images1 = [];
 var gallery = document.querySelector('.gallery');
 
-function startLoading() 
+function startLoading1() 
 {
-    imgNames.forEach(name => {
-        const img = new Image();
-
-var gallery = document.querySelector(".gallery");
-const imgLink = [
-    "./Image/giraffe.jpg",
-    "./Image/horse.jpg",
-    "./Image/racoon.jpg",
-    "./Image/tabletki.jpg",
-    "./Image/kura.jpg"
-];
-
-const images = [];
+    imgNames1.forEach(name1 => {
+        const img1 = new Image();
  
-function startLoading() 
-{
-    imgLink.forEach(name => {
-        const img = new Image();
- 
-        img.addEventListener('load', e => {
-            images.push(img);
-            gallery.appendChild(img);
+        img1.addEventListener('load', e => {
+            images1.push(img1);
+            gallery.appendChild(img1);
         });
 
  
-        img.src = name;
-        if(img.complete)
+        img1.src = name1;
+        if(img1.complete)
         {
-            img.addEventListener(new Event('load'));
+            img1.addEventListener(new Event('load'));
         }
     });
 }
 
  
-startLoading();
+startLoading1();
