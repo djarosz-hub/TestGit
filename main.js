@@ -12,17 +12,17 @@ const images = [];
 function startLoadingMJ() 
 {
     imgLinkMJ.forEach(name => {
-        const img = new Image();
+        const imgMJ = new Image();
  
-        img.addEventListener('load', e => {
-            images.push(img);
-            galleryMJ.appendChild(img);
+        imgMJ.addEventListener('load', e => {
+            images.push(imgMJ);
+            galleryMJ.appendChild(imgMJ);
         });
  
-        img.src = name;
-        if(img.complete)
+        imgMJ.src = name;
+        if(imgMJ.complete)
         {
-            img.addEventListener(new Event('load'));
+            imgMJ.addEventListener(new Event('load'));
         }
     });
 }
