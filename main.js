@@ -112,3 +112,30 @@ const imagesMG=[
     }
     
     startLoadingMG();
+
+    const galleryMJ = document.getElementById('MJ');
+    const imagesMJ = [
+        './Image/giraffe.jpg',
+        './Image/horse.jpg',
+        './Image/racoon.jpg',
+        './Image/tabletki.jpg',
+        './Image/kura.jpg'
+    ];
+    const imagesStackMJ = [];
+
+function startLoadingMJ() {
+    imagesMJ.forEach(imageMJ => {
+        const imgMJ = new Image();
+
+        imgMJ.addEventListener('load', e => {
+            imagesStackMJ.push(imgMJ);
+            galleryMJ.appendChild(imgMJ);   });
+        imgMJ.src = imageMJ;
+
+        if (imgMJ.complete) {
+            imgMJ.addEventListener(new Event('load'));
+        }
+    });
+}
+
+startLoadingMJ();
