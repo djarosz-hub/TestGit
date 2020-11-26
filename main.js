@@ -64,7 +64,7 @@ const imagesAr = [
     'http://lorempixel.com/400/200/sports/2/',
     'http://lorempixel.com/400/200/sports/5/',
     'http://lorempixel.com/400/200/sports/6/',
-    'http://lorempixel.com/400/200/sports/9/',
+    'http://lorempixel.com/400/200/sports/9/'
 ];
 
 const imagesPB = [];
