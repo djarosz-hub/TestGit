@@ -28,7 +28,7 @@ function startLoadingAJ()
     });
 }
 startLoadingAJ();
-const galeriaPB = document.querySelector('.galleryPB');
+var gallery = document.querySelector('.gallery');
 
 
 const imagesAr = [
@@ -44,12 +44,12 @@ const imagesAr = [
 const imagesPB = [];
 
 function startLoadingPB() {
-    imagesArPB.forEach(imagePB => {
+    imagesAr.forEach(imagePB => {
         const imgPB = new Image();
 
-        imgPB.addEventListener("load", e => {
+        imgPB.addEventListener('load', e => {
             imagesPB.push(imgPB);
-            galeriaPB.appendChild(imgPB)   });
+            gallery.appendChild(imgPB);   });
         imgPB.src = imagePB;
 
         if (imgPB.complete) {
