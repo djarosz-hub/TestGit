@@ -7,7 +7,7 @@ const imgLinkMJ = [
     './Image/kura.jpg'
 ];
 
-const images = [];
+const imagesMJ = [];
  
 function startLoadingMJ() 
 {
@@ -19,7 +19,7 @@ function startLoadingMJ()
         const imgMJ = new Image();
  
         imgMJ.addEventListener('load', e => {
-            images.push(imgMJ);
+            imagesMJ.push(imgMJ);
             galleryMJ.appendChild(imgMJ);
         });
  
