@@ -28,6 +28,8 @@ function startLoadingAJ()
     });
 }
 startLoadingAJ();
+
+
 const djGal = document.getElementById('DJ');
 const djNames = [
     'https://picsum.photos/id/237/400/300',
@@ -36,6 +38,7 @@ const djNames = [
     'https://picsum.photos/id/240/400/300',
     'https://picsum.photos/id/241/400/300',
 ];
+
 function startLoadingDJ() 
 {
     djNames.forEach(djEl => {
@@ -54,11 +57,9 @@ function startLoadingDJ()
     });
 }
 startLoadingDJ();
-// var gallery = document.querySelector('.gallery');
 
 
 const galleryPB = document.getElementById('PB');
-
 const imagesAr = [
     'http://lorempixel.com/400/200/sports/1/',
     'http://lorempixel.com/400/200/sports/2/',
