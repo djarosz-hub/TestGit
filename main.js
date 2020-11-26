@@ -1,5 +1,5 @@
-var gallery = document.querySelector(".gallery");
-const imgLink = [
+var galleryMJ = document.querySelector(".galleryMJ");
+const imgLinkMJ = [
     "./Image/giraffe.jpg",
     "./Image/horse.jpg",
     "./Image/racoon.jpg",
@@ -9,14 +9,14 @@ const imgLink = [
 
 const images = [];
  
-function startLoading() 
+function startLoadingMJ() 
 {
-    imgLink.forEach(name => {
+    imgLinkMJ.forEach(name => {
         const img = new Image();
  
         img.addEventListener('load', e => {
             images.push(img);
-            gallery.appendChild(img);
+            galleryMJ.appendChild(img);
         });
  
         img.src = name;
@@ -27,4 +27,4 @@ function startLoading()
     });
 }
  
-startLoading();
+startLoadingMJ();
