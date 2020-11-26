@@ -1,4 +1,4 @@
-var galleryMJ = document.querySelector('.galleryMJ');
+
 const imgLinkMJ = [
     './Image/giraffe.jpg',
     './Image/horse.jpg',
@@ -11,6 +11,10 @@ const images = [];
  
 function startLoadingMJ() 
 {
+    
+    var galleryMJ = document.createElement('div');
+    document.body.appendChild(galleryMJ);
+    galleryMJ.classList.add('gallery');
     imgLinkMJ.forEach(name => {
         const imgMJ = new Image();
  
