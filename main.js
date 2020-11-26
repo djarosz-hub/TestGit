@@ -7,7 +7,7 @@ const imgNamesAJ = [
 ];
 
 const imagesAJ = [];
-var gallery = document.querySelector('.gallery');
+const galleryAJ = document.getElementById('AJ');
 
 function startLoadingAJ() 
 {
@@ -16,7 +16,7 @@ function startLoadingAJ()
  
         imgAJ.addEventListener('load', e => {
             imagesAJ.push(imgAJ);
-            gallery.appendChild(imgAJ);
+            galleryAJ.appendChild(imgAJ);
         });
 
  
@@ -28,8 +28,9 @@ function startLoadingAJ()
     });
 }
 startLoadingAJ();
-var gallery = document.querySelector('.gallery');
 
+
+const galleryPB = document.getElementById('PB');
 
 const imagesAr = [
     'http://lorempixel.com/400/200/sports/1/',
@@ -47,7 +48,7 @@ function startLoadingPB() {
 
         imgPB.addEventListener('load', e => {
             imagesPB.push(imgPB);
-            gallery.appendChild(imgPB);   });
+            galleryPB.appendChild(imgPB);   });
         imgPB.src = imagePB;
 
         if (imgPB.complete) {
